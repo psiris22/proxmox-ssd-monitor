@@ -1,0 +1,23 @@
+{
+  "config": {
+    "step": {
+      "user": {
+        "title": "Proxmox SSD Monitor",
+        "description": "Enter the SSH credentials for your Proxmox host. Make sure `smartmontools` is installed on the host (`apt install smartmontools`).",
+        "data": {
+          "host": "Host / IP Address",
+          "port": "SSH Port",
+          "username": "Username",
+          "password": "Password",
+          "scan_interval": "Scan Interval (minutes)"
+        }
+      }
+    },
+    "error": {
+      "cannot_connect": "Connection failed. Please verify the host address, credentials, and that SSH is enabled."
+    },
+    "abort": {
+      "already_configured": "This Proxmox host is already configured."
+    }
+  }
+}
